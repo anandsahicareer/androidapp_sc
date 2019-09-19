@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_emp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+
+        <TextView
+            android:id="@+id/tv_education_details_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08"
+            android:text="Education Details:"
+            android:textSize="14dp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:gravity="center|left"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_gaduate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Degree / Course"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_univrsity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Board / University"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_college_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* School / College Name "
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Location"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_specialization"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Specialization"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_starting_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@drawable/roundededittext"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:editable="false"
+                android:paddingLeft="10dp"
+                android:focusable="false"
+                android:hint="Year Of Starting"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_passout_year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@drawable/roundededittext"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:editable="false"
+                android:paddingLeft="10dp"
+                android:focusable="false"
+                android:hint="Year of Completed"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_educationdetails_percentage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Grade / Percentage"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".06"/>
+    </LinearLayout>
+
+</LinearLayout>

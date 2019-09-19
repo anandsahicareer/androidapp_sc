@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#132F45">
+
+
+        <ScrollView
+            android:id="@+id/CC_main_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:background="@drawable/cc_main_bg_v4"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".15"
+                        android:text="Career Guidance by"
+                        android:textColor="@color/white"
+                        android:gravity="center|bottom"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".15"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:textSize="20dp"
+                        android:text="Career Experts"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".125"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".05"/>
+
+                        <Button
+                            android:id="@+id/btn_takefreetrail_a"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:background="@drawable/roundedbutton_officelogo_green"
+                            android:text="Free Trail &#160;&#160;>"
+                            android:textSize="14dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"/>
+
+                            <Button
+                                android:id="@+id/btn_takeschedule_a"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="@drawable/roundedbutton_officelogo_green"
+                                android:text="Schedule Session &#160;&#160;>"
+                                android:textSize="14dp"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"/>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".05"
+                            />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".05" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".3"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".1"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".25">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".025"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".875"
+                                android:text="Identify the right subjects and courses"
+                                android:textStyle="bold"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:gravity="left|center"
+                                android:textSize="14dp"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".25">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".025"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".875"
+                                android:textStyle="bold"
+                                android:text="Get help with new job,job growth or job change"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:gravity="left|center"
+                                android:textSize="14dp"
+                                android:shadowRadius="5"
+                                android:textColor="@color/white"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".0"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".25">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".025"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".875"
+                                android:text="Personal Career Report by Career Experts"
+                                android:textStyle="bold"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:gravity="left|center"
+                                android:textSize="14dp"
+                                android:shadowRadius="5"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".025"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="How does Career Counselling work?"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"/>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cc_how_does_counselling_work_v7"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".0125"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Schedule a"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Connect with"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Clear your"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Your"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".0125"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".0125"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Session"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Expert"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="doubts"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".225"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:text="Satisfaction"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".0125"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"/>
+
+
+                        <Button
+                            android:id="@+id/btn_takefreetrail_b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:background="@drawable/roundedbutton_officelogo_green"
+                            android:text="Free Trail &#160;&#160;&#160;>"
+                            android:textSize="14dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"/>
+                        <Button
+                            android:id="@+id/btn_takeschedule_b"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:background="@drawable/roundedbutton_officelogo_green"
+                            android:text="Schedule Session &#160;&#160;>"
+                            android:textSize="14dp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:background="@color/lightgrey">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="About SahiCareer Counsellors"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".425"
+                    android:orientation="horizontal"
+                    android:background="@color/lightgrey">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:src="@drawable/cc_about_counsellor_b_v1"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:src="@drawable/cc_about_counsellor_a_v2"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:src="@drawable/cc_about_counsellor_c_v1"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".225"
+                    android:orientation="horizontal"
+                    android:background="@color/lightgrey">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:text="Psychology background"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:text="Highly experienced"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:text="Extensively trained"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".025"/>
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".00"
+            android:background="@color/lightgrey"
+            android:orientation="horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/mainappcolor"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/cc_ll_footer_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_home" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Home"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cc_ll_footer_callnow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_callus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_call_now" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Call Now"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cc_ll_footer_contactus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_contactus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_contact_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Contact Us"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cc_ll_footer_plans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_plans"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_plans" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Plans"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/cc_ll_footer_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_aboutus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_about_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Profile"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

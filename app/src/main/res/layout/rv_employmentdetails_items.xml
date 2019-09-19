@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".025"/>
+    <LinearLayout
+        android:id="@+id/ll_emp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_empdetails_experience_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".08"
+            android:text="Experience:"
+            android:textSize="14dp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:gravity="center|left"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".09">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_empdetails_designation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Designation"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".09">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_empdetails_organization"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Organization"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:orientation="vertical"
+                android:background="@drawable/roundededittext">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".5"
+                    android:textSize="14dp"
+                    android:gravity="left|center"
+
+                    android:text="  Current Company?"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4">
+
+                    <RadioButton
+                            android:id="@+id/rb_empdetails_yes"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:text="Yes"
+                            android:checked="true" />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".1"/>
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".09">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_empdetails_location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Location"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".09">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+            <EditText
+                android:id="@+id/et_empdetails_work_startdate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@drawable/roundededittext"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:editable="false"
+                android:paddingLeft="10dp"
+                android:focusable="false"
+                android:hint="Started Working From"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".09">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+            <EditText
+                android:id="@+id/et_empdetails_work_tilldate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:background="@drawable/roundededittext"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+
+                android:paddingLeft="10dp"
+
+                android:hint="Worked Till"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:orientation="vertical"
+                android:background="@drawable/roundededittext">
+                <EditText
+                    android:id="@+id/et_empdetails_describe_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".8"
+                    android:padding="5dip"
+                    android:gravity="left"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:maxLength="4000"
+                    android:hint="  Describe Your Job Profile" />
+                <TextView
+                    android:id="@+id/tv_empdetails_describejob_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".175"
+                    android:paddingRight="10dp"
+                    android:gravity="right|center"
+                    android:textSize="14sp"
+                    android:text="0/4000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".025" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".075"/>
+</LinearLayout>

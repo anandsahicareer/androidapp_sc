@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/slider_image_a_v3">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".275"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/comp_logo_wt"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".025"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:text="SahiCareer"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:typeface="serif"
+        android:shadowRadius="5"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:text="Your personal career guide"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="1"
+        android:typeface="serif"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"/>
+</LinearLayout>

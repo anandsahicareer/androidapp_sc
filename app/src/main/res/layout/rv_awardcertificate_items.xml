@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_award_certificate_count"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".125"
+            android:text="Awards &amp; Certificate:"
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:gravity="center|left"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <EditText
+                android:id="@+id/et_awardcertificate_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:padding="5dip"
+                android:hint="* Awards / Certificate Name "
+                android:textSize="14sp"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".05"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".55">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".9"
+                android:orientation="vertical"
+                android:background="@drawable/roundededittext">
+                <EditText
+                    android:id="@+id/et_award_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".8"
+                    android:padding="5dip"
+                    android:gravity="left"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:maxLength="500"
+                    android:hint="* Description" />
+                <TextView
+                    android:id="@+id/tv_award_desc_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".15"
+                    android:paddingRight="10dp"
+                    android:gravity="right|center"
+                    android:text="0/500"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".075"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"/>
+</LinearLayout>

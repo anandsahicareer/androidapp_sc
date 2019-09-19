@@ -1,0 +1,439 @@
+<resources>
+    <string name="app_name">SahiCareer</string>
+    <string name="Career_Assessment">Career Assessment</string>
+    <string name="Career_Counseling">Career Counseling</string>
+    <string name="Job_internships">Jobs And Internships</string>
+    <string name="Career_Information">Career Information</string>
+    <string name="Resume_Service">Resume Service</string>
+    <string name="Find_Mentor">Find Mentor</string>
+    <string name="Coming_soon">Coming Soon</string>
+    <string name="top_line">Apply for the best Private and Government jobs</string>
+    <string name="govtjobs">GOVERNMENT JOBS</string>
+    <string name="pvtjobs">PRIVATE JOBS</string>
+    <string name="internship">INTERNSHPS</string>
+    <string name="Open">INTERNSHPS</string>
+    <string name="Close">INTERNSHPS</string>
+    <string name="submit">Submit</string>
+    <string name="mandatorystar">*</string>
+    <string name="aboutus_desc1">Sahicareer.com, an IIM alumni initiative, is your personal career guide. It is a scientific career exploration
+                                 platform, designed to enable you to decide the best career for yourself. A career needs to be
+                                 well planned, and we need professional guidance while deciding the appropriate career. sahicareer provides all the tools to assist you in the process of evaluating
+                                 the most appropriate career option.</string>
+    <string name="aboutus_desc2">Allow SahiCareer to help you with your career growth,because your career matters the most!</string>
+
+    <string name="customersays1">”Sahicareer has lead me to a positive career path. I was really confused what to do, but by mere help of them I finalize what to do with my future. Thank you SahiCareer for your efforts on me”.</string>
+    <string name="customername1">Ms. Neethu, College Student</string>
+    <string name="customersays2">”Had a very open, friendly and healthy discussion with the counsellor. She gave sufficient time to listen and understand the concerns. The suggestions given were unbiased and practical”</string>
+    <string name="customername2">-Mr. Manas Tamhane, Job Aspirant</string>
+    <string name="customersays3">”Sahicareer is the right platform which gives correct guidance to people who are aiming success in their career. Mentors are really helpful and experienced in various industries”.</string>
+    <string name="customername3">-Jisha A.R, Mentee</string>
+    <string name="customersays4">“I got to hear about Sahicareer and I asked my son to take the test. It really helped him. He also undertook counselling and the counsellor helped him identify the right course and college.”</string>
+    <string name="customername4">-Mrs. Mamta, Parent</string>
+    <string name="customersays5">“Sahicareer team has done a wonderful job in our college. I appreciate their dedication. Very happy about their functioning. Our students are also extremely happy and have provided positive feedback.”</string>
+    <string name="customername5">-Ms. Preema, Assistant Professor</string>
+    <string name="customersays6">“I have created my CV from Sahicareer website and it tooks awesome. When I went to attend an interview, interviewer appreciated me for making such colourful and professional resume.”</string>
+    <string name="customername6">-Ms. Kavitha Devaraj, Student</string>
+    <string name="needhelp">Need help for your students or employees? We will help you.</string>
+    <string name="careerassessment_slide1_text1">Each person is unique.</string>
+    <string name="careerassessment_slide1_text2">What career best for you?</string>
+    <string name="careerassessment_slide1_text3">We have mapped out 100+ career </string>
+    <string name="careerassessment_slide1_text4"> to help you make the right decision</string>
+
+    <string name="careerassessment_slide2_text1">SahiCareer has developed the most comprehensive,advanced and accurate Career Assessment test</string>
+    <string name="careerassessment_slide2_text2">advanced and accurate Career Assessment test</string>
+    <string name="careerassessment_slide2_text3">A career has multiple dimensions</string>
+    <string name="careerassessment_slide2_text4">We measure your "fit" with a career in a 4 critical ways:</string>
+
+    <string name="careercounselling_slide1_text1">Are you stuck trying to understand what subjects will help you find the right career? Are you unable to decide on the right career? Do you want to use your skills but do not how? This is where career guidance becomes important in making the right choice.</string>
+
+    <string name="careercounselling_slide1_text2">With SahiCareer Career Counselling, you are assigned an expert career guide to understand your aptitude and talents to help you progress in the right direction. A career guide helps you sift through the clutter and focus on your dream career. With the help of career expert, you are able to choose the right subjects for higher studies and move in the right direction. </string>
+
+    <string name="Rs499">"\u20B9499"</string>
+    <string name="Rs999">"\u20B9999"</string>
+    <string name="Rs1799">"\u20B91799"</string>
+    <string name="rightsign">"\u2713"</string>
+    <string name="byclicking"> By continuing, you agree to our</string>
+    <string name="termsandcondition"><u>Terms &amp; Conditions</u> and</string>
+    <string name="privacypolicy"><u>Privacy Policy</u>
+    </string>
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GET STARTED</string>
+
+    <string name="slide_1_title">Career Assessment</string>
+    <string name="slide_1_desc">Career planning is probably the biggest decision of your life!</string>
+
+    <string name="slide_2_title">Career Counselling</string>
+    <string name="slide_2_desc">Expert Guidance by experienced counsellors</string>
+
+    <string name="slide_3_title">Jobs And Internships</string>
+    <string name="slide_3_desc">Apply for the best Private and Government jobs</string>
+
+    <string name="slide_4_title">mentorships</string>
+    <string name="slide_4_desc">Mentorship is a life changing experience.Read about mentorship or book your session with an industry expert now.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_rb__edit_section_page">Rb_Edit_section_page</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
+    <string name="terms_condition_txt_1">PLEASE READ THESE TERMS CAREFULLY BEFORE USING THE ONLINE PAYMENT
+                                        FACILITY. USING THE ONLINE PAYMENT FACILITY ON THIS WEBSITE INDICATES
+                                        THAT YOU ACCEPT THESE TERMS. IF YOU DO NOT ACCEPT THESE TERMS DO NOT
+                                        USE THIS FACILITY.</string>
+    <string name="terms_condition_txt_2">All payments are subject to the following terms &amp; conditions:</string>
+
+    <string name="terms_condition_txt_3">Normally payment is required before or at the time of enrolment/affiliation/registration /purchasing
+                                        a product or facility etc with/from EBSC Technologies Pvt Ltd. (SahiCareer). All Fees quoted are in
+                                        Indian Rupees. The EBSC Technologies Pvt Ltd. (SahiCareer) reserves the right to change the fees
+                                        as per government directions without informing the customer a priori. Your payment will normally
+                                        reach the EBSC Technologies Pvt Ltd. (SahiCareer) account every Friday provided the amount of
+                                        payment is not less than INR 1000/-. EBSC Technologies Pvt Ltd. (SahiCareer) is not responsible
+                                        for any delay in receipt of fee payment due to the incorrect account number or incorrect personal
+                                        details. The EBSC Technologies Pvt Ltd. (SahiCareer) also cannot accept liability if payment is
+                                        refused or declined by the credit/ debit card supplier for any reason. In no event will the EBSC
+                                        Technologies Pvt Ltd. (SahiCareer) be liable for any damages whatsoever arising out of the use,
+                                        inability to use, or the results of use of this site, any websites linked to this site, or the materials or
+                                        information contained at any or all such sites, whether based on warranty, contract, tort or any other
+                                        legal theory and whether or not advised of the possibility of such damages.</string>
+
+    <string name="terms_condition_txt_4">The customer agrees that EBSC Technologies Pvt Ltd. (SahiCareer) will not be liable to anyone for
+                                        any loss or damage, either actual or consequential, arising out of or relating to these terms, or to
+                                        your (or any third party\'s) use or inability to use a site, or to your placement of content on a site, or
+                                        to your reliance upon information obtained from or through a site, in particular, EBSC Technologies
+                                        Pvt Ltd. (SahiCareer) will have no liability for any consequential, indirect, punitive, special or
+                                        incidental damages, whether foreseeable or unforeseeable, (including, but not limited to, claims for
+                                        defamation, errors, loss of data, or interruption in availability of data), arising out of or relating to
+                                        these terms, your use or inability to use a site, or any purchases on this site, or your placement of
+                                        content on a site, or to your reliance upon information obtained from or through a site, whether
+                                        based in contract, tort, statutory or other law, except only in the case of death or personal injury
+                                        where and only to the extent that applicable law requires such liability.</string>
+
+    <string name="terms_condition_txt_5">Refund Policy</string>
+    <string name="terms_condition_txt_6">Refunds, if applicable, at the discretion of the Management of EBSC Technologies Pvt. Ltd.
+                                        (SahiCareer), will only be made to the payment method used for the original transaction. For the
+                                        avoidance of doubt, nothing in this Policy shall require the EBSC Technologies Pvt. Ltd.
+                                        (SahiCareer) to refund the Fees (or part thereof) unless such Fees (or part thereof) has previously
+                                        been paid. </string>
+
+    <string name="terms_condition_txt_7">Security:</string>
+    <string name="terms_condition_txt_8">The online payment transactions are executed using state of the art technology to ensure secure
+                                        transaction. The EBSC Technologies Pvt. Ltd. (SahiCareer) shall not be liable for any failure by the
+                                        customer or third party making payment of Fees to properly protect data from being seen on their
+                                        screen by other persons or otherwise obtained by such persons, during the online payment process
+                                        or in respect of any omission to provide accurate information in the course of the online payment
+                                        process.</string>
+
+    <string name="terms_condition_txt_9">Service Provider:</string>
+    <string name="terms_condition_txt_10">EBSC Technologies Pvt Ltd. (SahiCareer) is not directly involved in the online payment but
+                                        through service provider Avenues (India) Pvt. Ltd. Mumbai. In the event that the customer does not
+                                        receive confirmation within 6 days of making the payment it is the responsibility of the customer to
+                                        check with the EBSC Technologies Pvt Ltd. (SahiCareer) that the payment has been accepted. The
+                                        customer shall remain responsible for the Fees until such time as the confirmation as referred to
+                                        above is received from the EBSC Technologies Pvt Ltd. (SahiCareer) in relation to each of these
+                                        and any outstanding amounts owed to the EBSC Technologies Pvt Ltd. (SahiCareer). </string>
+
+    <string name="terms_condition_txt_11">Privacy Policy:</string>
+    <string name="terms_condition_txt_12">This Privacy Policy applies to all of the products, services, and websites offered by EBSC
+                                        Technologies Pvt Ltd. (SahiCareer). Sometimes, we may post product specific privacy notices or
+                                        Help Centre materials to explain our products in more detail.</string>
+
+    <string name="terms_condition_txt_13">Website Detail:</string>
+    <string name="terms_condition_txt_14">Please note that the EBSC Technologies Pvt Ltd. (SahiCareer) holds no responsibility for incorrect
+                                        or no longer correct statements, quotes or descriptions and thereby excludes liability for any losses
+                                        resulting from such wrong information. Further, EBSC Technologies Pvt Ltd. (SahiCareer) has
+                                        every right to bring about legal action on students who misuse/alter / reproduce the content/
+                                        information available on the website.</string>
+
+    <string name="terms_condition_txt_15">Data Privacy Policy:</string>
+    <string name="terms_condition_txt_16">The EBSC Technologies Pvt Ltd. (SahiCareer) ensures the data privacy policy as per government
+                                        norms prevalent from time to time. Contact Details:
+                                        Email: info@sahicareer.com </string>
+
+
+    <string name="privacy_policy_1">This privacy policy has been compiled to better serve those who are concerned with how their
+                                    \'Personally Identifiable Information\' (PII) is being used online. PII, as described in US privacy law
+                                    and information security, is information that can be used on its own or with other information to
+                                    identify, contact, or locate a single person, or to identify an individual in context. Please read our
+                                    privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise
+                                    handle your Personally Identifiable Information in accordance with our website.</string>
+
+    <string name="privacy_policy_2">What personal information do we collect from the people that visit our blog, website or app?</string>
+    <string name="privacy_policy_3">When ordering or registering on our site, as appropriate, you may be asked to enter your name,
+                                    email address, mailing address, phone number or other details to help you with your experience.</string>
+
+    <string name="privacy_policy_4">When do we collect information?</string>
+    <string name="privacy_policy_5">We collect information from you when you register on our site, place an order, subscribe to a
+                                    newsletter, fill out a form, Use Live Chat, Open a Support Ticket or enter information on our site.</string>
+    <string name="privacy_policy_6">----------</string>
+
+    <string name="privacy_policy_7">How do we use your information?</string>
+    <string name="privacy_policy_8">We may use the information we collect from you when you register, make a purchase, sign up for
+                                    our newsletter, respond to a survey or marketing communication, surf the website, or use certain
+                                    other site features in the following ways:</string>
+    <string name="privacy_policy_9">• To personalize your experience and to allow us to deliver the type of content and product
+                                    offerings in which you are most interested.
+                                    \n• To improve our website in order to better serve you.
+                                    \n• To allow us to better service you in responding to your customer service requests.
+                                    \n• To administer a contest, promotion, survey or other site feature.
+                                    \n• To quickly process your transactions.
+                                    \n• To ask for ratings and reviews of services or products
+                                    \n• To follow up with them after correspondence (live chat, email or phone inquiries)</string>
+
+    <string name="privacy_policy_10">How do we protect your information?</string>
+    <string name="privacy_policy_11">Our website is scanned on a regular basis for security holes and known vulnerabilities in order to
+                                    make your visit to our site as safe as possible.
+                                    \nWe use regular Malware Scanning.
+                                    \nYour personal information is contained behind secured networks and is only accessible by a limited
+                                    number of persons who have special access rights to such systems, and are required to keep the
+                                    information confidential. In addition, all sensitive/credit information you supply is encrypted via
+                                    Secure Socket Layer (SSL) technology.</string>
+    <string name="privacy_policy_12">We implement a variety of security measures when a user places an order enters, submits, or
+                                    accesses their information to maintain the safety of your personal information.
+                                    \nAll transactions are processed through a gateway provider and are not stored or processed on our
+                                    servers.</string>
+
+
+    <string name="privacy_policy_19">Third-party disclosure</string>
+    <string name="privacy_policy_20">We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable
+                                    Information.</string>
+
+    <string name="privacy_policy_21">Third-party links</string>
+    <string name="privacy_policy_22">We do not include or offer third-party products or services on our website.</string>
+
+    <string name="privacy_policy_23">Google</string>
+    <string name="privacy_policy_24">Google\'s advertising requirements can be summed up by Google\'s Advertising Principles. They are
+                                    put in place to provide a positive experience for users.
+                                    https://support.google.com/adwordspolicy/answer/1316548?hl=en
+                                    \nWe use Google AdSense Advertising on our website.</string>
+    <string name="privacy_policy_25">Google, as a third-party vendor, uses cookies to serve ads on our site. Google\'s use of the DART
+                                    cookie enables it to serve ads to our users based on previous visits to our site and other sites on the
+                                    Internet. Users may opt-out of the use of the DART cookie by visiting the Google Ad and Content
+                                    Network privacy policy.</string>
+
+    <string name="privacy_policy_26">We have implemented the following:</string>
+    <string name="privacy_policy_27">• Remarketing with Google AdSense
+                                    \n• Google Display Network Impression Reporting
+                                    \n• Demographics and Interests Reporting
+                                    \n• DoubleClick Platform Integration</string>
+    <string name="privacy_policy_28">We, along with third-party vendors such as Google use first-party cookies (such as the Google
+                                    Analytics cookies) and third-party cookies (such as the DoubleClick cookie) or other third-party
+                                    identifiers together to compile data regarding user interactions with ad impressions and other ad
+                                    service functions as they relate to our website.</string>
+
+    <string name="privacy_policy_29">Opting out:</string>
+    <string name="privacy_policy_30">Users can set preferences for how Google advertises to you using the Google Ad Settings page.
+                                    Alternatively, you can opt out by visiting the Network Advertising Initiative Opt Out page or by
+                                    using the Google Analytics Opt Out Browser add on.</string>
+
+    <string name="privacy_policy_31">California Online Privacy Protection Act</string>
+    <string name="privacy_policy_32">CalOPPA is the first state law in the nation to require commercial websites and online services to
+                                    post a privacy policy. The law\'s reach stretches well beyond California to require any person or
+                                    company in the United States (and conceivably the world) that operates websites collecting
+                                    Personally Identifiable Information from California consumers to post a conspicuous privacy policy
+                                    on its website stating exactly the information being collected and those individuals or companies
+                                    with whom it is being shared.
+                                    \n- See more at: http://consumercal.org/california-online-privacy-
+                                    protection-act-caloppa/#sthash.0FdRbT51.dpuf</string>
+
+    <string name="privacy_policy_33">According to CalOPPA, we agree to the following:</string>
+    <string name="privacy_policy_34">Users can visit our site anonymously.
+        \nOnce this privacy policy is created, we will add a link to it on our home page or as a minimum, on the first significant
+        page after entering our website.
+        \nOur Privacy Policy link includes the word \'Privacy\' and can easily be found on the page specified above.</string>
+    <string name="privacy_policy_35">You will be notified of any Privacy Policy changes:
+        \n• On our Privacy Policy Page
+        \nCan change your personal information:
+        \n• By logging in to your account</string>
+
+    <string name="privacy_policy_36">How does our site handle Do Not Track signals?</string>
+    <string name="privacy_policy_37">We honor Do Not Track signals and Do Not Track, plant cookies, or use advertising when a Do Not Track (DNT)
+        browser mechanism is in place.</string>
+
+    <string name="privacy_policy_38">Does our site allow third-party behavioral tracking?</string>
+    <string name="privacy_policy_39">It\'s also important to note that we allow third-party behavioral tracking</string>
+
+    <string name="privacy_policy_40">COPPA (Children Online Privacy Protection Act)</string>
+    <string name="privacy_policy_41">When it comes to the collection of personal information from children under the age of 13 years old,
+        the Children\'s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States\'
+        consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do
+        to protect children\'s privacy and safety online.
+        \n\nWe do not specifically market to children under the age of 13 years old.
+        \n\nDo we let third-parties, including ad networks or plug-ins collect PII from children under 13?</string>
+
+    <string name="privacy_policy_42">Fair Information Practices</string>
+    <string name="privacy_policy_43">The Fair Information Practices Principles form the backbone of privacy law in the United States
+        and the concepts they include have played a significant role in the development of data protection laws around the globe.
+        Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the
+        various privacy laws that protect personal information.</string>
+
+    <string name="privacy_policy_44">In order to be in line with Fair Information Practices we will take the following responsive action,
+        should a data breach occur:</string>
+    <string name="privacy_policy_45">We will notify you via email
+        \n• Within 7 business days
+        \n\nWe also agree to the Individual Redress Principle which requires that individuals have the right to legally pursue
+        enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only
+        that individuals have enforceable rights against data users, but also that individuals have recourse to courts or government
+        agencies to investigate and/or prosecute non-compliance by data processors.</string>
+
+    <string name="privacy_policy_46">CAN SPAM Act</string>
+    <string name="privacy_policy_47">The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements
+        for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough
+        penalties for violations.</string>
+
+    <string name="privacy_policy_48">We collect your email address in order to:</string>
+    <string name="privacy_policy_49">Send information, respond to inquiries, and/or other requests or questions
+                \nProcess orders and to send information and updates pertaining to orders.
+                \nSend you additional information related to your product and/or service
+                \nMarket to our mailing list or continue to send emails to our clients after the original transaction has occurred.</string>
+
+    <string name="privacy_policy_50">To be in accordance with CANSPAM, we agree to the following:</string>
+    <string name="privacy_policy_51">• Not use false or misleading subjects or email addresses.
+                    \n• Identify the message as an advertisement in some reasonable way.
+                    \n• Include the physical address of our business or site headquarters.
+                    \n• Monitor third-party email marketing services for compliance, if one is used.
+                    \n• Honor opt-out/unsubscribe requests quickly.
+                    \n• Allow users to unsubscribe by using the link at the bottom of each email.</string>
+
+    <string name="privacy_policy_52">If at any time you would like to unsubscribe from receiving future emails, you can email us at</string>
+    <string name="privacy_policy_53">Follow the instructions at the bottom of each email and we will promptly remove you from ALL
+        correspondence.</string>
+
+    <string name="privacy_policy_54">Contacting Us</string>
+    <string name="privacy_policy_55">If there are any questions regarding this privacy policy, you may contact us using the information
+                    below.
+                    \n\nSahiCareer.com
+                    \nEBSC Technologies Pvt. Ltd.,
+                    \n1st floor, 617, 2nd Main Road,
+                    \nBinnamangala, Hoysala Nagar,
+                    \nIndiranagar
+                    \nBengaluru - 5600038
+                    \nIndia
+                    \ninfo@sahicareer.com</string>
+
+
+    <string name="about_us_1">Overview</string>
+    <string name="about_us_2">Sahicareer.com, an IIM alumni initiative, is your personal career guide. sahicareer.com is a scientific career
+        exploration platform, designed to enable you to decide the best career for yourself.
+        \n\nA career needs to be well planned, and we need professional guidance while deciding the appropriate career. Each one of us desire
+        different qualities from our careers – growth, stability, money, responsibility – or all of it. sahicareer.com provides all the tools
+        to assist you in the process of evaluating the most appropriate career option.
+        \n\nAnd, there’s more! To build your resume in a professional format, avail individual guidance from professionals, get mentoring from
+        someone who has taken a similar journey, or access data on your career choice, we have got it covered for you! Allow sahicareer.com
+        to help you with your career growth, because your career matters the most!</string>
+
+    <string name="about_us_3">Vision</string>
+    <string name="about_us_4">Holistic career guidance platform that works with youth to help them understand strengths, channelize their
+        careers and assist in achieving their career goals, one step at a time.</string>
+
+    <string name="about_us_5">Mission</string>
+    <string name="about_us_6">Provide high quality career services , and be the first choice destination for people seeking any career assistance.</string>
+
+    <string name="truster_says_a">Very supportive, empathetic and amazing career counselling. Indeed helpful and solution oriented.</string>
+    <string name="truster_name_a"><b>-Supratim, Student</b></string>
+
+    <string name="truster_says_b">I had a very nice experience with the Assessment Test. The online test had everything,
+        and my counsellor really helped me.</string>
+    <string name="truster_name_b"><b>-Rohitha K, Student</b></string>
+
+    <string name="truster_says_c">SahiCareer team has been so open and interactive with me. The counselling was a great experience.</string>
+    <string name="truster_name_c"><b>-Harshit Pathnaik, Student</b></string>
+
+    <string name="truster_says_d">SahiCareer is the right platform which gives correct guidance to people who are aiming for success in their career.
+    </string>
+    <string name="truster_name_d"><b>-Jisha A.R, Mentee</b></string>
+</resources>
+
+

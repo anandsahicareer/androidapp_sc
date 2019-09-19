@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".9"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".7">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".025"/>
+
+            <EditText
+                android:id="@+id/et_language_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:padding="5dip"
+                android:hint=" Language"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/roundededittext" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".45"
+                android:background="@drawable/roundededittext"
+                android:layout_marginEnd="11dp"
+                android:layout_marginStart="11dp">
+            <Spinner
+                android:id="@+id/spinner_language"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/mySpinnerItemStyle"
+                />
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".025"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"/>
+</LinearLayout>

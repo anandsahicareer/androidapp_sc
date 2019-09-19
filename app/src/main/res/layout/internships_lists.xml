@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:padding="1dp"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linearlayout_designfor_recycleview_items"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intern_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="gjhsjfghskfjghjkfghdfjkghfdbnbdjfbjfdsghghflksjghlsjdfghdfjlghlsdfjghlsdfghlfdsghldfsgjdfhgljdfhgljfdhgljfdghlfdjghlfjghjfdghlfdhgdfjhgjfdghkjdfhgdfhg"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="8dp"
+                android:src="@drawable/icon_calender" />
+
+
+
+            <TextView
+                android:id="@+id/intern_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center|left"
+                android:text="29-05-2019"
+                android:textSize="12sp"
+                android:textColor="@color/blue" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="7dp"
+                android:src="@drawable/icon_salary" />
+
+            <TextView
+                android:id="@+id/intern_salary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center|left"
+                android:text="15,000"
+                android:textSize="12sp"
+                android:textColor="@color/blue" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="8dp"
+                android:src="@drawable/icon_clock" />
+
+            <TextView
+                android:id="@+id/intern_working_hours"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:gravity="center|left"
+                android:text="Full Time"
+                android:textSize="12sp"
+                android:textColor="@color/blue" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"
+                android:padding="8dp"
+                android:src="@drawable/icon_duration" />
+
+            <TextView
+                android:id="@+id/intern_duration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+                android:gravity="center|left"
+                android:text="6 months"
+                android:textSize="12sp"
+                android:textColor="@color/blue" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

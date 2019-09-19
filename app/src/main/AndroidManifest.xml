@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bangalore.sahicareer">
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".RbSocialMediaLinks"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+        <activity
+            android:name=".Represent_company"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Represent_college"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Represent_school"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LetsgetsStartedMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicyPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rb_awardsCertificateDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".RbLanguagesDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".RbHobbiesInterestDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".RbEducationalDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".RbEmployementDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".RbProfessionalSkills"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Rb_Edit_Resume_Details_Page"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resume_EditTemplateSections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Edit_profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LetsgetstartedPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NoInternetConnection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LauncherSlideScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PaymentPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GovtjobUrlPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateJoburlPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InternshipUrlPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterUserDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeBuilder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FAQpage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfilePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Land_Iam_parent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Land_iam_working_professional"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Land_looking_for_job"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Land_iam_in_college"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Land_10th_11th_class"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainLandingPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegistrationPage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".MembershipPlanpage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Ca_Openreport_pdf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AssessmentTestPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InternshipCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivateJobCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GovtJobsCategory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Career_counselling"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CareerInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ResumeService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindMentor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CareerAssessment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Loadingpage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jobsandinternships"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.bangalore.sahicareer.MySMSBroadCastReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

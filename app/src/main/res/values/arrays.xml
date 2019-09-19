@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_items_array">
+        <item>How SahiCareer can help you in your Career</item>
+        <item>SahiCareer\'s Career Assessment Test</item>
+        <item>SahiCareer\'s Career Guidance</item>
+        <item>SahiCareer mentorship</item>
+        <item>What is the best part in career explorer from SahiCareer?</item>
+        <item>SahiCareer Resume Builder</item>
+        <item>Why does a School need SahiCareer?</item>
+        <item>Why does a College need SahiCareer?</item>
+        <item>How is SahiCareer better over competition?</item>
+        <item>Other questions</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_a">
+        <item>How can SahiCareer help me plan my career?</item>
+        <item>How is SahiCareer different from others?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_b">
+        <item>What makes you different from other career \nassessment tests?</item>
+        <item>How reliable is the career assessment test?</item>
+        <item>What if I start the assessment test but can\'t
+            \ncontinue.Can I complete the test some other time?</item>
+        <item>What is the difference between the Free
+            \nassessment report and Paid assessment report?</item>
+
+    </string-array>
+    <string-array name="sub_one_items_array_c">
+        <item>What is the background of the SahiCareer career \ncounsellors?</item>
+        <item>Why do I need a career counsellor?</item>
+        <item>How can a career counsellor guide me to choose \nthe right job?</item>
+        <item>My family and friends have advised me a career \ndifferent from that in my report. What should I do?</item>
+        <item>What modes of counselling do you offer?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_d">
+        <item>How do you ensure that I find a mentor matching \nmy profile?</item>
+        <item>What is the background of the SahiCareer career \nmentors?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_e">
+        <item>What is SahiCareer\'s career explorer?</item>
+        <item>Why career exploration is important?</item>
+        <item>Does SahiCareer\'s career explorer tell me my \nperfect career?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_f">
+        <item>How does your Resume Generator work?</item>
+        <item>How does resume play a role in getting a job?</item>
+        <item>What is the fees for building my resume?</item>
+        <item>I am not happy with my resume. Can I get some \nhelp?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_g">
+        <item>How will our school benefit from your Career \nGuidance System?</item>
+        <item>We already have a Career Counsellor in our school.\nWhy do we need SahiCareer?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_h">
+        <item>How will our college benefit from the SahiCareer \nCareer Guidance?</item>
+        <item>We already have a Career Counsellor in our college.\nWhy do we need SahiCareer?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_i">
+        <item>What different services does SahiCareer offer?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_array_j">
+        <item>Does SahiCareer guarantee Data Confidentiality?</item>
+        <item>Are parents involved in this Guidance Process?</item>
+        <item>Do you have any commercial partner?</item>
+        <item>Are the tests online or paper-based?</item>
+    </string-array>
+
+    <string-array name="sub_one_items_arrray_default">
+        <item>Nothing to display</item>
+    </string-array>
+
+
+
+    <string-array name="desc_a_one">
+        <item>A career starts with knowing about the perfect
+            \nindustry,qualification and job for you.
+            \nSahiCareer will help you realise your passion,
+            \ninterests, and abilities and facilitate your
+            \ncareer goals through a concrete career plan.</item>
+    </string-array>
+
+    <string-array name="desc_a_two">
+        <item>SahiCareer is different and better on multiple
+            \ncounts.
+            \nFirstly, our career test is the most scientific and
+            \nwell researched test, with the highest accuracy and
+            \nreliability.
+            \nSecondly, all career counsellors possess deep
+            \nknowledge,have a psychology or MSW background,
+            \nand are trained to counsel youth in the best
+            \npossible way.
+            \nThirdly, we go further in helping you with your
+            \ndream career by providing you with additional
+            \ncareer services,resume builder,resume services,
+            \nschool and college information.
+            \nAll of this to help you in your career!
+            \nFourth,we have highly established industry mentors
+            \nfrom different industries and with strong experience
+            \nto personally mentor the SahiCareer youth.?</item>
+
+    </string-array>
+
+    <string-array name="desc_b_one">
+        <item>Our career assessment test is the most reliable and
+            \naccurate test. Most tests either test aptitude
+            \nor interest.
+            \nSahiCareer\'s test is multi-faceted and tests aptitude,
+            \ninterest, personality and work style!
+            \nIt has been designed after extensive research with
+            \nyouth, and suggests the best possible careers.
+            \nOur test can also be customised in multiple
+            \nlanguages and for different industries.
+            \nWe are also continually updating and improving our
+            \ntest through ongoing research.</item>
+    </string-array>
+
+    <string-array name="desc_b_two">
+        <item>Our test has proven to be highly reliable with youth.
+            \nThe test uses the best in class research framework
+            \nand has the unique ability to comprehensively
+            \nanalyse an individual\'s best career possibilities</item>
+    </string-array>
+
+    <string-array name="desc_b_three">
+        <item>Yes, you can continue your assessment test at your
+            \nconvenience. However, we believe that it is best to
+            \nfinish the test in one sitting.</item>
+    </string-array>
+
+    <string-array name="desc_b_four">
+        <item>Free assessment will give you the basic career
+            \nresults.While a free test is useful for your career,
+            \nthe paid career assessment test will help you with
+            \nmany additional things.
+            \nThe paid assessment report will give you details
+            \nabout your
+            \n1) Interests
+            \n2) Abilities
+            \n3) Personality
+            \n4) Workstyle
+            \nIn addition to this, the detailed assessment report
+            \nwill get into the details of each career and all
+            \npotential career paths that you are suitable for you.
+            \nThis detailed career report can work as a great
+            \nguide for you whenever you are looking to make
+            \ncareer decisions, now or in the future.</item>
+    </string-array>
+
+
+    <string-array name="desc_c_one">
+        <item>We have highly experienced counsellor who have
+            \nextensive experience in working with you,
+            \nand who will help you in exploring and
+            \nunderstanding your best career.
+            \nAll SahiCareer counsellors have a psychology
+            \nor MSW background.</item>
+    </string-array>
+    <string-array name="desc_c_two">
+        <item>Our career counsellor will help you develop a
+            \nbroader understanding of your own self and about
+            \nwork and education, further helping you make
+            \ninformed educational, career and life decisions.</item>
+    </string-array>
+    <string-array name="desc_c_three">
+        <item>Our career counsellors work with individuals at
+            \nvarious stages in their careers. They will help
+            \nyou determine what careers you are best suited
+            \nfor given your interests, personality, abilities
+            \nand work style. Our counsellor will develop your
+            \ncareer plan to improve your current career and
+            \nprovide advice about entering a new profession.</item>
+    </string-array>
+    <string-array name="desc_c_four">
+        <item>Family and friends are our well-wishers.
+            \nIt is always good to get an external opinion also,
+            \nfrom career experts. You will always have the
+            \nchoice to determine your own career, after all.</item>
+    </string-array>
+    <string-array name="desc_c_five">
+        <item>We provide three modes counselling: Face to Face,
+            \nVideo and Telephonic counselling.</item>
+    </string-array>
+
+    <string-array name="desc_d_one">
+        <item>We have experienced industry mentors to
+            \npersonally guide.
+            \nWe help you find the right mentor by matching you
+            \nwith a mentor who is from a similar industry,
+            \neducational background and location.</item>
+    </string-array>
+
+    <string-array name="desc_d_two">
+        <item>Our mentors are successful professionals, are
+            \narmed with diverse industry experience, are
+            \nhelpful and are extremely keen to facilitate
+            \nthe youth towards their best careers!</item>
+    </string-array>
+
+    <string-array name="desc_e_one">
+        <item>Our career explorer is a convenient, easy to use,
+            \nonline resource that provides instructive,
+            \ninsightful information that can empower you to
+            \ntake control of your career exploration journey
+            \nin few easy steps.</item>
+    </string-array>
+
+    <string-array name="desc_e_two">
+        <item>In making career decisions, the work you choose
+            \nto pursue will have a direct impact on the way
+            \nyou live your life. Good career planning and
+            \ndecision-making involves learning about careers,
+            \ntypes of work, educational requirements, and job
+            \nfunctions. These are critically important in
+            \nunderstanding which careers meet your interests
+            \nand goals.</item>
+    </string-array>
+
+    <string-array name="desc_e_three">
+        <item>Our career explorer can\'t tell you your perfect job.
+            \nIt does however allow you to match your personal
+            \nattitudes and behaviours to the careers database
+            \nso you can explore potential careers and understand
+            \nthem more.</item>
+    </string-array>
+
+    <string-array name="desc_f_one">
+        <item>Our resume generator works automatically.
+            \nYou simply enter in data, and you get the output.
+            \nThe output is the resume which is professional
+            \nand elegant. At each stage of Building the resume,
+            \nwe will guide you and give examples. Besides that,
+            \nwe have several experts from different industry
+            \nwho will give you tips make your resume more
+            \nattractive and professional.
+            </item>
+    </string-array>
+
+    <string-array name="desc_f_two">
+        <item>Resume is the back bone of your job application
+            \nand plays a very important role in influencing
+            \nthe recruiter hire/ interview you.</item>
+    </string-array>
+
+    <string-array name="desc_f_three">
+        <item>Our online resume builder gives is absolutely free!</item>
+    </string-array>
+
+    <string-array name="desc_f_four">
+        <item>Yes, we understand it\'s not easy to build a great
+            \nresume.Which is why we have a team of experts
+            \nwho analyse your resume, consult you and prepare
+            \na revised,professional and highly impactful resume?
+            </item>
+    </string-array>
+
+    <string-array name="desc_g_one">
+        <item>The students have a long term career plan
+            \nprepared for them. They become self-aware
+            \nand goal-oriented from an early age.
+            \nThe students also have an external voice
+            \nto share their thoughts, beliefs and opinions.
+            \nThe students benefit immensely, which results in
+            \nmassive benefit for the school. The college has a
+            \nstrong marketing tool to attract future students,
+            \nbuilds stronger credibility, and has a stronger,
+            \nmore engaged and successful alumni.</item>
+    </string-array>
+
+    <string-array name="desc_g_two">
+        <item>Our long term student guidance plan keeps the
+            \nstudent\'s career well-being in focus at all times.
+            \nWe track a student?s progress, report to the
+            \nmanagement, and plan interventions if required.
+            \n\nWe also involve parents and the school
+            \nmanagementin decision-making, since they are
+            \nthe key influencers for the children.</item>
+    </string-array>
+
+    <string-array name="desc_h_one">
+        <item>College is a critical time for the students careers.
+            \nThe students have a long term career plan
+            \nprepared for them.
+            \nThey become self-aware and goal-oriented
+            \nfrom an early age. The students also have an
+            \nexternal voice to share their thoughts, beliefs and
+            \nopinions.
+            \nThe students benefit immensely, which results in
+            \nmassive benefit for the college. The college has a
+            \nstrong marketing tool to attract future students,
+            \nbuilds stronger credibility, and has a stronger,
+            \nmore engaged and successful alumni.</item>
+    </string-array>
+
+    <string-array name="desc_h_two">
+        <item>Our long term student guidance plan keeps the
+            \nstudent\'s career well-being in focus at all times.
+            \nWe track a student\'s progress, report to the
+            \nmanagement, and plan interventions if required.
+            \nWe also involve parents and the school
+            \nmanagement in decision-making, since they are
+            \nthe key influencers for the children.</item>
+    </string-array>
+
+    <string-array name="desc_i_one">
+        <item>SahiCareer has the following services which are the
+            \nbest for career guidance: Most scientific and
+            \naccurate career assessment test Highly skilled
+            \ncounsellors,with prior experience of counselling
+            \nyouth Strong mentorship system, with a solid base
+            \nof industry professionals Allied services on the
+            \nportal ?resume services, institutional data,
+            \ncareer blogs</item>
+    </string-array>
+
+
+    <string-array name="desc_j_one">
+        <item>SahiCareer guarantees data confidentially.
+            \nWe believe data is of utmost important, and will
+            \nsign a non-disclosure agreement with you.
+            \nAll data will be kept securely, and safely.</item>
+    </string-array>
+
+    <string-array name="desc_j_two">
+        <item>Yes, parents are involved. Since parents are critical
+            \ninfluencers in the career planning process of their
+            \nchildren,we invite parents to be a part of
+            \ncounselling, and also share their child\'s progress
+            \nwith them.</item>
+    </string-array>
+
+    <string-array name="desc_j_three">
+        <item>No. Apart from schools, colleges and individuals,
+            \nwe do not have any other commercial partners.</item>
+    </string-array>
+
+    <string-array name="desc_j_four">
+        <item>The tests are completely online, and compatible
+            \nwith any device or browser.</item>
+    </string-array>
+
+    <string-array name="Skill_Experience">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+    <string-array name="Language_proficiency">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+</resources>

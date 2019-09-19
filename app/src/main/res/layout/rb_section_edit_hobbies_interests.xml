@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".01"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".075">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:src="@drawable/rb_hobbies_v1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".3"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".02"/>
+    <ScrollView
+        android:id="@+id/sv_cnt_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".895"
+        android:background="@color/white"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_emp_main"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".02"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"/>
+                    <EditText
+                        android:id="@+id/et_hobbies_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:padding="5dip"
+                        android:hint="* Hobbies / Interests "
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:background="@drawable/roundededittext" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".58"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05"/>
+                <Button
+                    android:id="@+id/bt_hobbies_clear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".45"
+                    android:textAllCaps="false"
+                    android:background="#E0554B"
+                    android:textColor="@color/white"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/bt_hobbies_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".45"
+                    android:textAllCaps="false"
+                    android:background="#2CA030"
+                    android:textColor="@color/white"
+                    android:text="Submit" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".05"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".85"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

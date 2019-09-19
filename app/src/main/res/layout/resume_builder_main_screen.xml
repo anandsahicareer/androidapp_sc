@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#132F45">
+
+    <ScrollView
+            android:id="@+id/CA_main_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".0"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rb_top_image_a"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/rb_ll_template_a"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".475"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rb_template_ll_border">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rb_template_image_a_v1"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"/>
+                    <LinearLayout
+                        android:id="@+id/rb_ll_template_b"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".475"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rb_template_ll_border">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rb_template_image_b_v1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/rb_ll_template_c"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".475"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rb_template_ll_border">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rb_template_image_c_v1"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".05"/>
+                    <LinearLayout
+                        android:id="@+id/rb_ll_template_d"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".475"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rb_template_ll_border">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/rb_template_image_d_v1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/mainappcolor"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/rb_ll_footer_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_home" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Home"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rb_ll_footer_callnow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_callus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_call_now" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Call Now"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rb_ll_footer_contactus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_contactus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_contact_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Contact Us"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rb_ll_footer_plans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_plans"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_plans" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Plans"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rb_ll_footer_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_aboutus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_about_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Profile"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

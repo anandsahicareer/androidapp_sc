@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#132F45">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".45"
+                    android:background="@drawable/ji_main_bg_v1"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".15"
+                        android:text="Apply to the latest Jobs"
+                        android:textColor="@color/white"
+                        android:gravity="center|bottom"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".15"
+                        android:text="and Internships"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="5"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".325"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".1"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".3">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".45"
+                                android:text="1,00,000+ Private Jobs"
+                                android:textStyle="bold"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="10"
+                                android:textSize="14dp"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"/>
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".35"
+                                android:textStyle="bold"
+                                android:text="1000+ Govt Jobs"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:textSize="14dp"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".25">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".45"
+                                android:textStyle="bold"
+                                android:text="10000+ Internships"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:textSize="14dp"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".35"
+                                android:textStyle="bold"
+                                android:text="230+ Locations"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:textSize="14dp"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"/>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".05"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".25">
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".05"
+                                android:src="@drawable/checkbox_new_v1"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".45"
+                                android:text="500+ Recruiters"
+                                android:textStyle="bold"
+                                android:shadowColor="@color/black"
+                                android:shadowDx="1"
+                                android:shadowDy="1"
+                                android:shadowRadius="5"
+                                android:gravity="center|left"
+                                android:textSize="14dp"
+                                android:textColor="@color/white"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".45"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".075"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".45"
+                    android:orientation="vertical"
+                    android:background="@color/lightgrey">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/lightgrey"
+                        android:layout_weight=".02"/>
+                    <LinearLayout
+                        android:id="@+id/ji_ll_internships"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".313"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@color/white">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".45"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".1" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".4"
+                                android:text="Internships"
+                                android:gravity="center|bottom"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:typeface="serif"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".3"
+                                android:text="Study | Learn | Improve"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/yellow"
+                                android:textSize="10dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".2" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:orientation="vertical">
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".25"
+                                android:src="@drawable/right_arrow"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:padding="8dp"
+                            android:background="@color/white">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="@drawable/iam_looking_for_job_v1"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/lightgrey"
+                        android:layout_weight=".02"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/ji_ll_govtjobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".313"
+                        android:background="@color/white">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".45"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".1" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".4"
+                                android:text="Government Jobs"
+                                android:gravity="center|bottom"
+                                android:textColor="@color/black"
+                                android:typeface="serif"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".3"
+                                android:text="Career | Security | Impact"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/yellow"
+                                android:textSize="10dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".2" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:orientation="vertical">
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".25"
+                                android:src="@drawable/right_arrow"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:padding="8dp"
+                            android:background="@color/white">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="@drawable/govt_jobs_v1"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/lightgrey"
+                        android:layout_weight=".02"/>
+                    <LinearLayout
+                        android:id="@+id/ji_ll_privatejobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".313"
+                        android:background="@color/white">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".45"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".1" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".4"
+                                android:text="Private Jobs"
+                                android:gravity="center|bottom"
+                                android:typeface="serif"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".3"
+                                android:text="Know | Grow | Progress"
+                                android:gravity="center"
+                                android:typeface="serif"
+                                android:textColor="@color/yellow"
+                                android:textSize="10dp" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".2" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:orientation="vertical">
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".25"
+                                android:src="@drawable/right_arrow"/>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight=".375"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".4"
+                            android:padding="8dp"
+                            android:background="@color/white">
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".4"
+                                android:background="@drawable/iam_working_professional_v1"/>
+                        </LinearLayout>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".025"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/lightgrey"
+                        android:layout_weight=".0"/>
+
+                </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/mainappcolor"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/ji_ll_footer_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_home" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Home"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ji_ll_footer_callnow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_callus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_call_now" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Call Now"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ji_ll_footer_contactus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_contactus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_contact_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Contact Us"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ji_ll_footer_plans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_plans"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_plans" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Plans"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ji_ll_footer_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_aboutus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_about_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Profile"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

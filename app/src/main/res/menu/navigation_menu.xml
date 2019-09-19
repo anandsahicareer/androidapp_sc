@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/root_group">
+        <item
+            android:id="@+id/nv_item_home"
+            android:title="Home"
+            android:icon="@drawable/nv_home"/>
+        </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/root_group1">
+        <item
+            android:id="@+id/nv_item_assessment"
+            android:title="Career Assessment"
+            android:icon="@drawable/nv_assessment"/>
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/root_group2">
+        <item
+            android:id="@+id/nv_item_counselling"
+            android:title="Career Counselling"
+            android:icon="@drawable/nv_counselling"/>
+    </group>
+
+        <item android:title="Career Information"
+            android:icon="@drawable/right_icon">
+            <menu android:id="@+id/you_menu">
+                <group android:checkableBehavior="single" android:id="@+id/you_group">
+                    <item
+                        android:id="@+id/item_you_summary"
+                        android:title="Schools And Colleges"
+                        android:icon="@drawable/nv_schoolscolleges"/>
+                    <item
+                        android:id="@+id/item_calendar"
+                        android:title="Career Explorer"
+                        android:icon="@drawable/nv_careerexplorer"/>
+                    <item
+                        android:id="@+id/item_request_timeout"
+                        android:title="Knowledge Platform"
+                        android:icon="@drawable/nv_knowledge"/>
+
+                </group>
+            </menu >
+        </item>
+        <group android:checkableBehavior="single" android:id="@+id/root_group3">
+            <item
+                android:id="@+id/nv_item_Resume_Service"
+                android:title="Resume Service"
+                android:icon="@drawable/nv_resume"/>
+        </group>
+        <group android:checkableBehavior="single" android:id="@+id/root_group4">
+            <item
+                android:id="@+id/nv_item_jobs_internships"
+                android:title="Jobs And Internships"
+                android:icon="@drawable/nv_jobsandinternship"/>
+        </group>
+        <group android:checkableBehavior="single" android:id="@+id/root_group5">
+            <item
+                android:id="@+id/item_mentorships"
+                android:title="Find Mentor"
+                android:icon="@drawable/nv_mentor"/>
+        </group>
+
+    </menu>
+

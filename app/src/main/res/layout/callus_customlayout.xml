@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/linearlayoutborder"
+    android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"
+                android:background="@color/officelogo_green" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"/>
+                <Button
+                    android:id="@+id/frmCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:background="@drawable/close_v5"/>
+                           </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center|top"
+                android:text="18001031610"
+                android:textColor="@color/mediumgrey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="(Toll free Number)"
+                android:paddingLeft="10dp"
+                android:textColor="@color/mediumgrey"
+                android:textSize="12dp"/>
+            <View
+                android:id="@+id/edit_mobileno"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".2">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:text="Call Now!"/>
+    <Button
+        android:id="@+id/frmCallnow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:background="@drawable/roundedbutton_officelogo_green"
+        android:text="Call Now"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:text="Call Now!"/>
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"/>
+
+    </LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/linearlayoutborder"
+    android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".025"
+                android:background="@color/pink" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"/>
+                <Button
+                    android:id="@+id/frmCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:background="@drawable/close_v5"/>
+                           </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Enter OTP for verification"
+                android:textColor="@color/mediumgrey"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".15"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="We have sent you verification code on"
+                android:paddingLeft="10dp"
+                android:textColor="@color/mediumgrey"
+                android:textSize="12dp"/>
+                <TextView
+                    android:id="@+id/otp_tv_mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".15"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|top"
+                    android:text="9743329491"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/mediumgrey"
+                    android:textSize="12dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+                <EditText
+                    android:id="@+id/edit_otp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:maxLength="5"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:hint="00000"
+                    android:typeface="serif"
+                    android:background="@null"
+                    android:padding="0dp"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"/>
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="Call Now!"/>
+                <Button
+                    android:id="@+id/frmCallnow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="Submit"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:text="Call Now!"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".025"/>
+
+    </LinearLayout>

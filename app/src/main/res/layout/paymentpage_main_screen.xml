@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".9"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/webView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        />
+                </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:background="@color/mainappcolor"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/testpage_ll_footer_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_home" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtcurrent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Home"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/testpage_ll_footer_callnow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_callus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_call_now" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Call Now"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/testpage_ll_footer_contactus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_contactus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_contact_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Contact Us"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/testpage_ll_footer_plans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_plans"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_plans" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Plans"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/testpage_ll_footer_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:orientation="vertical"
+            android:background="@drawable/ripple_effect_footerlogo">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".35">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+                <Button
+                    android:id="@+id/btn_aboutus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:background="@drawable/footer_about_us" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".4"
+                android:text="Profile"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/white" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".05" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
