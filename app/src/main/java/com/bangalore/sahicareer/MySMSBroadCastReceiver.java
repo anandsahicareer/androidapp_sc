@@ -31,7 +31,7 @@ public class MySMSBroadCastReceiver extends BroadcastReceiver
                // sms_str+= "\r\n";
 
                 String Sender = smsm[i].getOriginatingAddress();
-                if(sms_str.length()>20) {
+               // if(sms_str.length()>20) {
                     String submessage = sms_str.substring(0, 15);
                     String otp = sms_str.substring(37, 42);
                     //Check here sender is yours
@@ -41,7 +41,7 @@ public class MySMSBroadCastReceiver extends BroadcastReceiver
 
                         LocalBroadcastManager.getInstance(context).sendBroadcast(smsIntent);
                     }
-                }
+               // }
 
             }
         }
