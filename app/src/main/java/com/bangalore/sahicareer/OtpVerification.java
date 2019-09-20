@@ -8,6 +8,7 @@ import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.v4.app.ActivityCompat;
@@ -36,6 +37,7 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -46,6 +48,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+import java.util.Scanner;
 
 import javax.microedition.khronos.opengles.GL;
 import javax.net.ssl.HttpsURLConnection;
@@ -474,5 +477,7 @@ public class OtpVerification extends AppCompatActivity implements View.OnClickLi
             return result.toString();
 
         }
+
+
     }
 }

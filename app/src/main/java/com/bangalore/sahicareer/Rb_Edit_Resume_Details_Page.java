@@ -1,14 +1,19 @@
 package com.bangalore.sahicareer;
 
+import android.Manifest;
+import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -44,6 +49,7 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -94,7 +100,16 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
     String ba1;
     private static int RESULT_LOAD_IMAGE = 1;
 
+    private static final String AWS_KEY = "AKIAIAUOKNSL466FGEGQ";
+    private static final String AWS_SECRET = "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";
+    private static final String AWS_BUCKET = "wow-wow";
 
+    Button selectButton;
+    ImageView mImage;
+    ProgressDialog pd;
+    private static final int CAMERA_REQUEST = 1888;
+
+    private static final int MY_CAMERA_PERMISSION_CODE = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -146,11 +161,7 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
                 @Override
                 public void onClick(View arg0) {
 
-                    Intent i = new Intent(
-                            Intent.ACTION_PICK,
-                            android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
-                    startActivityForResult(i, RESULT_LOAD_IMAGE);
+                    SelectImage();
                 }
             });
 
@@ -334,11 +345,14 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
     public void submit_summary() {
         str_summary=edit_summary.getText().toString();
         if(str_summary.equals("")){
+            /*edit_summary.setError("Enter Summary");
+            edit_summary.requestFocus();
+            return;*/
             Toast toast = Toast.makeText(getApplicationContext(), "Nothing to Save", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
             TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
-            /*v1.setTextColor(Color.RED);
-            v1.setTextSize(14);*/
+            v1.setTextColor(Color.RED);
+            v1.setTextSize(14);
             toast.show();
         }else{
             Toast toast = Toast.makeText(getApplicationContext(),"Success", Toast.LENGTH_SHORT);
@@ -534,9 +548,35 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
 
     }
 
+    /*public Bitmap getResizedBitmap(Bitmap image, int maxSize) {
+        int width = image.getWidth();
+        int height = image.getHeight();
 
+        float bitmapRatio = (float)width / (float) height;
+        if (bitmapRatio > 1) {
+            width = maxSize;
+            height = (int) (width / bitmapRatio);
+        } else {
+            height = maxSize;
+            width = (int) (height * bitmapRatio);
+        }
+        return Bitmap.createScaledBitmap(image, width, height, true);
 
-
+    }*/
+    public Bitmap getResizedBitmap(Bitmap bm, int newHeight, int newWidth)
+    {
+        int width = bm.getWidth();
+        int height = bm.getHeight();
+        float scaleWidth = ((float) newWidth) / width;
+        float scaleHeight = ((float) newHeight) / height;
+        // create a matrix for the manipulation
+        Matrix matrix = new Matrix();
+        // resize the bit map
+        matrix.postScale(scaleWidth, scaleHeight);
+        // recreate the new Bitmap
+        Bitmap resizedBitmap = Bitmap.createBitmap(bm, 0, 0, width, height, matrix, false);
+        return resizedBitmap;
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -545,7 +585,27 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
         if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
 
             selectedImage = data.getData();
-            String[] filePathColumn = { MediaStore.Images.Media.DATA };
+            try {
+                //getting bitmap object from uri
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImage);
+
+                //displaying selected image to imageview
+
+                Bitmap converetdImage = getResizedBitmap(bitmap, 100,100);
+                imageView.setImageBitmap(converetdImage);
+                //calling the method uploadBitmap to upload image
+
+               /* ByteArrayOutputStream baos = new ByteArrayOutputStream();     //Encode image send it to server like string
+                converetdImage.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                byte[] imageBytes = baos.toByteArray();
+                String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);*/
+
+
+                //uploadBitmap(bitmap);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            /*String[] filePathColumn = { MediaStore.Images.Media.DATA };
 
             Cursor cursor = getContentResolver().query(selectedImage,
                     filePathColumn, null, null, null);
@@ -556,7 +616,7 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
             cursor.close();
 
             imageView = (ImageView) findViewById(R.id.imgView);
-            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+            imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));*/
 
         }
     }
@@ -668,4 +728,33 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
             return buffer.toString();
         }
     }
+
+
+    private void SelectImage() {
+        final CharSequence[] options = {"Capture image", "Select from gallery"};
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(Rb_Edit_Resume_Details_Page.this);
+        builder.setTitle("Select");
+        builder.setCancelable(true);
+        builder.setItems(options, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int item) {
+              if (options[item].equals("Capture image")) {
+
+                      Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                      startActivityForResult(cameraIntent, 1);
+
+              } else if (options[item].equals("Select from gallery")) {
+                    Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    startActivityForResult(intent, 1);
+
+                }
+
+            }
+        });
+        builder.show();
+    }
+
+
+
 }
