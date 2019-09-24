@@ -629,22 +629,6 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
     }
 
 
-    private void clickpic() {
-        // Check Camera
-        if (getApplicationContext().getPackageManager().hasSystemFeature(
-                PackageManager.FEATURE_CAMERA)) {
-            // Open default camera
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
-
-            // start the image capture Intent
-            startActivityForResult(intent, 100);
-
-        } else {
-            Toast.makeText(getApplication(), "Camera not supported", Toast.LENGTH_LONG).show();
-        }
-    }
-
     private void upload() {
         // Image location URL
         Log.e("path", "----------------" + picturePath);
@@ -729,7 +713,6 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
         }
     }
 
-
     private void SelectImage() {
         final CharSequence[] options = {"Capture image", "Select from gallery"};
 
@@ -747,14 +730,11 @@ public class Rb_Edit_Resume_Details_Page extends AppCompatActivity implements Vi
               } else if (options[item].equals("Select from gallery")) {
                     Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     startActivityForResult(intent, 1);
-
-                }
-
+              }
             }
         });
         builder.show();
     }
-
 
 
 }
