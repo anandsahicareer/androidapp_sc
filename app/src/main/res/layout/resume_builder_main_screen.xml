@@ -24,18 +24,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:orientation="vertical">
-                    <View
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".0"/>
+                        android:layout_weight=".8"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"/>
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/rb_top_image_a"/>
+                        android:layout_weight=".7"
+                        android:background="@drawable/rb_top_image_a_v1"/>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".15"/>
+                    </LinearLayout>
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".1"/>
+                        android:layout_weight=".2"/>
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -107,6 +119,11 @@
                             android:layout_height="match_parent"
                             android:src="@drawable/rb_template_image_d_v1"/>
                     </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="vertical">
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

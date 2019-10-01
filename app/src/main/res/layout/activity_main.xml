@@ -195,17 +195,17 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight=".01"
+                android:layout_weight=".02"
                 android:background="#E4E2E2"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight=".485">
+                android:layout_weight=".47">
                 <LinearLayout
                     android:id="@+id/ll_service_assessment_test"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:orientation="vertical"
                     android:background="@drawable/buttonstyle">
                     <LinearLayout
@@ -215,7 +215,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <LinearLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -239,11 +239,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Career Assessment"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Career"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Assessment"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -252,18 +263,18 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
                 </LinearLayout>
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".005"
+                    android:layout_weight=".01"
                     android:background="#E4E2E2"/>
                 <LinearLayout
                     android:id="@+id/ll_service_counselling"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:orientation="vertical"
                     android:background="@drawable/buttonstyle">
                     <LinearLayout
@@ -273,7 +284,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <View
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -297,11 +308,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Career Counselling"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Career"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Counselling"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -310,19 +332,19 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
                 </LinearLayout>
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".005"
+                    android:layout_weight=".01"
                     android:background="#E4E2E2"/>
 
                 <LinearLayout
                     android:id="@+id/ll_service_information"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:orientation="vertical"
                     android:background="@drawable/buttonstyle">
                     <LinearLayout
@@ -332,7 +354,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <View
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -356,11 +378,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Career Information"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Schools"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Colleges"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -369,23 +402,20 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
                 </LinearLayout>
-            </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".01"
-                android:background="#E4E2E2"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".485">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".01"
+                    android:background="#E4E2E2"/>
+
                 <LinearLayout
                     android:id="@+id/ll_service_resume_service"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:orientation="vertical"
                     android:background="@drawable/buttonstyle">
                     <LinearLayout
@@ -395,7 +425,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <View
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -419,11 +449,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Resume Service"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Resume"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Services"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -432,19 +473,93 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
                 </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".02"
+                android:background="#E4E2E2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".47">
+                <LinearLayout
+                    android:id="@+id/ll_service_Learning_english"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2425"
+                    android:orientation="vertical"
+                    android:background="@drawable/buttonstyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".2"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".3">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".35"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3"
+                            android:background="@drawable/services_career_information_v2"
+                            android:orientation="horizontal" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".35"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".05"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Learning"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="English"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1"/>
+                </LinearLayout>
+
 
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".005"
+                    android:layout_weight=".01"
                     android:background="#E4E2E2"/>
                 <LinearLayout
                     android:id="@+id/ll_service_jobs_and_intern"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:background="@drawable/buttonstyle"
                     android:orientation="vertical">
                     <LinearLayout
@@ -454,7 +569,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <View
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -478,11 +593,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Jobs &amp; Internships"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Jobs and"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Internships"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -491,18 +617,19 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
                 </LinearLayout>
 
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".005"
+                    android:layout_weight=".01"
                     android:background="#E4E2E2"/>
                 <LinearLayout
+                    android:id="@+id/ll_service_mentorship"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".33"
+                    android:layout_weight=".2425"
                     android:orientation="vertical"
                     android:background="@drawable/buttonstyle">
                     <LinearLayout
@@ -512,7 +639,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".4">
+                        android:layout_weight=".3">
                         <View
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
@@ -536,11 +663,22 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".2">
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Mentorship"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="mentorship"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Program"
                             android:textColor="@color/black"
                             android:textSize="10dp"
                             android:typeface="serif"
@@ -549,14 +687,81 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight=".15"/>
+                        android:layout_weight=".1"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".01"
+                    android:background="#E4E2E2"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2425"
+                    android:orientation="vertical"
+                    android:background="@drawable/buttonstyle">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".2"></LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".3">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".35"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3"
+                            android:background="@drawable/services_mentorships_v5"
+                            android:orientation="horizontal" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".35"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".05"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".35"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Knowledge"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".5"
+                            android:text="Centre"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:typeface="serif"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".1"/>
                 </LinearLayout>
 
             </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight=".01"
+                android:layout_weight=".02"
                 android:background="#E4E2E2"/>
 
 

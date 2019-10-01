@@ -1253,7 +1253,8 @@ public class GovtJobsCategory extends AppCompatActivity  {
                     url.toString().contains(".mpeg") || url.toString().contains(".mpe") || url.toString().contains(".mp4") || url.toString().contains(".avi")) {
                 // Video files
                 intent.setDataAndType(uri, "video/*");
-            } else {
+            }
+            else {
                 intent.setDataAndType(uri, "*/*");
             }
 

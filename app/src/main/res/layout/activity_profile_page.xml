@@ -147,11 +147,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -178,11 +181,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -236,11 +242,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -267,11 +276,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -297,11 +309,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -327,11 +342,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -358,11 +376,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -416,11 +437,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -447,11 +471,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -479,11 +506,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"/>
-            <ImageView
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".05"
-                android:src="@drawable/blue_checkbox_v1"/>
+                android:text="\u2713"
+                android:gravity="left|center"
+                android:textSize="14dp"
+                android:textColor="@color/darkgrey"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

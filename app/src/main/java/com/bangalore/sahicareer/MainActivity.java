@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String TAG = MainActivity.class.getSimpleName();
 
     ScrollView sv;
-    LinearLayout ll_assessment_test,ll_counselling,ll_jobs_and_internships,ll_careerinformation,ll_resume_service,
+    LinearLayout ll_assessment_test,ll_counselling,ll_jobs_and_internships,ll_careerinformation,ll_resume_service,ll_learning_english,ll_mentorship,
                  ll_footer_home,ll_footer_callnow,ll_footer_contactus,ll_footer_plans,ll_footer_profile,
                  ll_trustedlogo_institute,ll_trustedlogo_resume,ll_trustedlogo_testtaken,ll_trustedlogo_activeusers,ll_trustedlogo_counselled,ll_trustedlogo_mentorship,
                  ll_represent_school_college,ll_represent_institutions;
@@ -124,6 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ll_careerinformation=(LinearLayout)findViewById(R.id.ll_service_information);
         ll_jobs_and_internships=(LinearLayout)findViewById(R.id.ll_service_jobs_and_intern);
         ll_resume_service=(LinearLayout)findViewById(R.id.ll_service_resume_service);
+        ll_mentorship=(LinearLayout)findViewById(R.id.ll_service_mentorship);
+        ll_learning_english=(LinearLayout)findViewById(R.id.ll_service_Learning_english);
+
 
         btn_letsgetstarted=(Button) findViewById(R.id.bt_letsgetstarted);
         btn_letsgetstarted.setOnClickListener(this);
@@ -183,31 +186,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //new ProfileDetailsAPI().execute();
 
-        ll_counselling.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        LinearLayout view = (LinearLayout) v;
-                        view.getBackground().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
-                        v.invalidate();
-                        break;
-                    }
-                    case MotionEvent.ACTION_UP:
-                        // Your action here on button click
-                       // progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-                        Intent counselling = new Intent(MainActivity.this, Career_counselling.class);
-                        startActivity(counselling);
-                    case MotionEvent.ACTION_CANCEL: {
-                        LinearLayout view = (LinearLayout) v;
-                        view.getBackground().clearColorFilter();
-                        view.invalidate();
-                        break;
-                    }
-                }
-                return true;
-            }
-        });
 
         ll_assessment_test.setOnTouchListener(new View.OnTouchListener() {
 
@@ -224,6 +202,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         // Your action here on button click
 
                         Intent counselling = new Intent(MainActivity.this, CareerAssessment.class);
+                        startActivity(counselling);
+                    case MotionEvent.ACTION_CANCEL: {
+                        LinearLayout view = (LinearLayout) v;
+                        view.getBackground().clearColorFilter();
+                        view.invalidate();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
+
+
+        ll_counselling.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        LinearLayout view = (LinearLayout) v;
+                        view.getBackground().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                        v.invalidate();
+                        break;
+                    }
+                    case MotionEvent.ACTION_UP:
+                        // Your action here on button click
+                        // progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                        Intent counselling = new Intent(MainActivity.this, Career_counselling.class);
                         startActivity(counselling);
                     case MotionEvent.ACTION_CANCEL: {
                         LinearLayout view = (LinearLayout) v;
@@ -278,6 +283,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         // Your action here on button click
 
                         Intent counselling = new Intent(MainActivity.this, ResumeService.class);
+                        startActivity(counselling);
+                    case MotionEvent.ACTION_CANCEL: {
+                        LinearLayout view = (LinearLayout) v;
+                        view.getBackground().clearColorFilter();
+                        view.invalidate();
+                        break;
+                    }
+                }
+                return true;
+            }
+        });
+
+        ll_learning_english.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        LinearLayout view = (LinearLayout) v;
+                        view.getBackground().setColorFilter(0x77000000, PorterDuff.Mode.SRC_ATOP);
+                        v.invalidate();
+                        break;
+                    }
+                    case MotionEvent.ACTION_UP:
+                        // Your action here on button click
+
+                        Intent counselling = new Intent(MainActivity.this, LearnEnglishPage.class);
                         startActivity(counselling);
                     case MotionEvent.ACTION_CANCEL: {
                         LinearLayout view = (LinearLayout) v;
