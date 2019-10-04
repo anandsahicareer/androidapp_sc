@@ -37,6 +37,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -153,6 +154,18 @@ public class GovtjobUrlPage extends AppCompatActivity implements View.OnClickLis
                         Intent l = new Intent(GovtjobUrlPage.this, Jobsandinternships.class);
                         startActivity(l);
                         break;
+
+                    case R.id.nv_item_Resume_Service:
+                        Intent resume_service = new Intent(GovtjobUrlPage.this, ResumeService.class);
+                        startActivity(resume_service);
+                        dl.closeDrawers();
+                        break;
+
+                    case R.id.nv_item_learn_english:
+                        Intent learn_english = new Intent(GovtjobUrlPage.this, LearnEnglishPage.class);
+                        startActivity(learn_english);
+                        dl.closeDrawers();
+                        break;
                     default:
                         return true;
                 }
@@ -190,10 +203,8 @@ public class GovtjobUrlPage extends AppCompatActivity implements View.OnClickLis
                 break;
 
             case R.id.intern_url_ll_footer_callnow:
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:18001031610"));
-                startActivity(intent);
-
+                CallNowDialog callnowdialog = new CallNowDialog();
+                callnowdialog.showDialog(GovtjobUrlPage.this);
                 break;
 
             case R.id.intern_url_ll_footer_contactus:

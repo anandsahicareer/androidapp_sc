@@ -30,6 +30,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -253,6 +254,24 @@ public class Land_iam_in_college extends AppCompatActivity implements View.OnCli
                         Intent k= new Intent(Land_iam_in_college.this, Career_counselling.class);
                         startActivity(k);
                         break;
+
+                    case R.id.nv_item_jobs_internships:
+                        Intent l = new Intent(Land_iam_in_college.this, Jobsandinternships.class);
+                        startActivity(l);
+                        dl.closeDrawers();
+                        break;
+
+                    case R.id.nv_item_Resume_Service:
+                        Intent resume_service = new Intent(Land_iam_in_college.this, ResumeService.class);
+                        startActivity(resume_service);
+                        dl.closeDrawers();
+                        break;
+
+                    case R.id.nv_item_learn_english:
+                        Intent learn_english = new Intent(Land_iam_in_college.this, LearnEnglishPage.class);
+                        startActivity(learn_english);
+                        dl.closeDrawers();
+                        break;
                     default:
                         return true;
                 }
@@ -331,41 +350,7 @@ public class Land_iam_in_college extends AppCompatActivity implements View.OnCli
         }
 
     }
-    public class CallNowDialog {
 
-        public void showDialog(Activity activity) {
-            final Dialog dialog = new Dialog(activity);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setCancelable(false);
-            dialog.setContentView(R.layout.callus_customlayout);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
-            Button callnow = dialog.findViewById(R.id.frmCallnow);
-            //final EditText et_mobileno=dialog.findViewById(R.id.edit_mobileno);
-            callnow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    dialog.dismiss();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:18001031610"));
-                    startActivity(intent);
-
-                }
-            });
-
-            Button cancel = dialog.findViewById(R.id.frmCancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Toast.makeText(getApplicationContext(),"Cancel" ,Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
-                }
-            });
-
-            dialog.show();
-        }
-    }
     public class ContactUsDialog {
 
         public void showDialog(Activity activity) {

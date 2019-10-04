@@ -32,6 +32,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -95,12 +96,22 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
         bt_399_plan=(Button) findViewById(R.id.btn_le_399_plan);
         bt_399_plan.setOnClickListener(this);
 
+        bt_499_plan=(Button) findViewById(R.id.btn_le_499_plan);
+        bt_499_plan.setOnClickListener(this);
+
+        bt_999_plan=(Button) findViewById(R.id.btn_le_999_plan);
+        bt_999_plan.setOnClickListener(this);
+
+        bt_1799_plan=(Button) findViewById(R.id.btn_le_1799_plan);
+        bt_1799_plan.setOnClickListener(this);
+
         sv=(ScrollView)findViewById(R.id.CA_main_scrollview);
         dl = (DrawerLayout)findViewById(R.id.drawer_layout);
         t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
         dl.addDrawerListener(t);
         t.syncState();
 
+        new GetSubscriptionsPlanDetailsAPI().execute();
         nv = (NavigationView)findViewById(R.id.nav_view);
 
 
@@ -113,7 +124,6 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                     case R.id.nv_item_home:
                         Intent i = new Intent(LearnEnglishPage.this, MainActivity.class);
                         startActivity(i);
-
                         dl.closeDrawers();
 
                         break;
@@ -141,6 +151,12 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                         dl.closeDrawers();
                         break;
 
+                    case R.id.nv_item_learn_english:
+                        Intent n = new Intent(LearnEnglishPage.this, LearnEnglishPage.class);
+                        startActivity(n);
+                        dl.closeDrawers();
+                        break;
+
                     default:
                         return true;
                 }
@@ -158,7 +174,6 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
             return true;
 
         return super.onOptionsItemSelected(item);
-
 
     }
 
@@ -198,6 +213,25 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.btn_le_399_plan:
+                view.startAnimation(buttonClick);
+
+                break;
+
+            case R.id.btn_le_499_plan:
+                view.startAnimation(buttonClick);
+                /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
+                startActivity(plan_399);*/
+
+                break;
+
+            case R.id.btn_le_999_plan:
+                view.startAnimation(buttonClick);
+                /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
+                startActivity(plan_399);*/
+
+                break;
+
+            case R.id.btn_le_1799_plan:
                 view.startAnimation(buttonClick);
                 /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
                 startActivity(plan_399);*/
@@ -468,39 +502,114 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
 
     }
 
-    public class CallNowDialog {
+    public class GetSubscriptionsPlanDetailsAPI extends AsyncTask<String, Void, String> {
 
-        public void showDialog(Activity activity) {
-            final Dialog dialog = new Dialog(activity);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setCancelable(false);
-            dialog.setContentView(R.layout.callus_customlayout);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
+        protected void onPreExecute(){}
 
-            Button callnow = dialog.findViewById(R.id.frmCallnow);
-            //final EditText et_mobileno=dialog.findViewById(R.id.edit_mobileno);
-            callnow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+        protected String doInBackground(String... arg0) {
 
-                    dialog.dismiss();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:18001031610"));
-                    startActivity(intent);
+            try {
+
+                URL url = new URL("https://www.sahicareer.com/subscription-plans"); // here is your URL path
+
+
+
+                JSONObject postDataParams = new JSONObject();
+
+                postDataParams.put("user_name", "null");
+
+                Log.e("params",postDataParams.toString());
+
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setReadTimeout(15000 /* milliseconds */);
+                conn.setConnectTimeout(15000 /* milliseconds */);
+                conn.setRequestMethod("GET");
+                conn.setDoInput(false);
+                conn.setDoOutput(true);
+
+                OutputStream os = conn.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(
+                        new OutputStreamWriter(os, "UTF-8"));
+                writer.write(getPostDataString(postDataParams));
+
+                writer.flush();
+                writer.close();
+                os.close();
+
+                int responseCode=conn.getResponseCode();
+
+                if (responseCode == HttpsURLConnection.HTTP_OK) {
+
+                    BufferedReader in=new BufferedReader(new
+                            InputStreamReader(
+                            conn.getInputStream()));
+
+                    StringBuffer sb = new StringBuffer("");
+                    String line="";
+
+                    while((line = in.readLine()) != null) {
+
+                        sb.append(line);
+                        break;
+                    }
+
+                    in.close();
+                    return sb.toString();
 
                 }
-            });
-
-            Button cancel = dialog.findViewById(R.id.frmCancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Toast.makeText(getApplicationContext(),"Cancel" ,Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
+                else {
+                    return new String("false : "+responseCode);
                 }
-            });
+            }
+            catch(Exception e){
+                return new String("Exception: " + e.getMessage());
+            }
 
-            dialog.show();
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            try {
+                JSONObject jsonObject = new JSONObject(result);
+                String status = jsonObject.getString("ack");
+
+              /*  if(status.equals("1")){
+                    Toast toast = Toast.makeText(getApplicationContext(), "Thank you for getting in touch!\n" +
+                            "One of our executive will get back to you shortly.\n", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
+                    tv.setTextColor(Color.BLACK);
+                    tv.setTextSize(14);
+                    toast.show();
+                    contactus_dialog.dismiss();
+
+                }*/
+               /* else
+                {
+                    Toast toast = Toast.makeText(getApplicationContext(), "Something Went Wrong! Please Try after Sometime...", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
+                    tv.setTextColor(Color.BLACK);
+                    tv.setTextSize(14);
+                    toast.show();
+                }*/
+
+            }catch (final JSONException e) {
+                Log.e(TAG, "Json parsing error: " + e.getMessage());
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(getApplicationContext(),
+                                "Json parsing error: " + e.getMessage(),
+                                Toast.LENGTH_LONG)
+                                .show();
+                    }
+                });
+
+            }
+
         }
     }
+
 }

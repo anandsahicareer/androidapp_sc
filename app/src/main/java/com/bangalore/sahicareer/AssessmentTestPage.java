@@ -47,6 +47,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -173,11 +174,8 @@ public class AssessmentTestPage extends AppCompatActivity {
                     }
                     case MotionEvent.ACTION_UP:
                         // Your action here on button click
-                        Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:18001031610"));
-                        startActivity(intent);
-                        /*CallNowDialog callnowdialog = new CallNowDialog();
-                        callnowdialog.showDialog(MainActivity.this);*/
+                        CallNowDialog callnowdialog = new CallNowDialog();
+                        callnowdialog.showDialog(AssessmentTestPage.this);
                     case MotionEvent.ACTION_CANCEL: {
                         LinearLayout view = (LinearLayout) v;
                         view.getBackground().clearColorFilter();

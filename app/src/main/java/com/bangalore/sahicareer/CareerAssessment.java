@@ -2,27 +2,20 @@ package com.bangalore.sahicareer;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.telecom.Call;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -37,6 +30,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -186,6 +180,12 @@ public class CareerAssessment extends AppCompatActivity implements View.OnClickL
                     case R.id.nv_item_Resume_Service:
                         Intent m = new Intent(CareerAssessment.this, ResumeService.class);
                         startActivity(m);
+                        dl.closeDrawers();
+                        break;
+
+                    case R.id.nv_item_learn_english:
+                        Intent n = new Intent(CareerAssessment.this, LearnEnglishPage.class);
+                        startActivity(n);
                         dl.closeDrawers();
                         break;
 
@@ -358,41 +358,7 @@ public class CareerAssessment extends AppCompatActivity implements View.OnClickL
             }
         }
     }
-    public class CallNowDialog {
 
-        public void showDialog(Activity activity) {
-            final Dialog dialog = new Dialog(activity);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setCancelable(false);
-            dialog.setContentView(R.layout.callus_customlayout);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
-            Button callnow = dialog.findViewById(R.id.frmCallnow);
-            //final EditText et_mobileno=dialog.findViewById(R.id.edit_mobileno);
-            callnow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    dialog.dismiss();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:18001031610"));
-                    startActivity(intent);
-
-                }
-            });
-
-            Button cancel = dialog.findViewById(R.id.frmCancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Toast.makeText(getApplicationContext(),"Cancel" ,Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
-                }
-            });
-
-            dialog.show();
-        }
-    }
 
     public class ContactUsDialog {
 

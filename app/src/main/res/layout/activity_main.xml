@@ -225,7 +225,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_assessment_test_v1"
+                            android:background="@drawable/services_assessment_test_v2"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -294,7 +294,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_counselling_v4"
+                            android:background="@drawable/services_counselling_v5"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -364,7 +364,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_career_information_v2"
+                            android:background="@drawable/services_schools_v2"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -435,7 +435,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_resume_v2"
+                            android:background="@drawable/services_resume_v3"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -508,7 +508,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_career_information_v2"
+                            android:background="@drawable/services_learn_english_v1"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -579,7 +579,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_jobs_v2"
+                            android:background="@drawable/services_jobs_v3"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -649,7 +649,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_mentorships_v5"
+                            android:background="@drawable/services_mentorships_v6"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"
@@ -716,7 +716,7 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight=".3"
-                            android:background="@drawable/services_mentorships_v5"
+                            android:background="@drawable/services_kc_v1"
                             android:orientation="horizontal" />
                         <View
                             android:layout_width="0dp"

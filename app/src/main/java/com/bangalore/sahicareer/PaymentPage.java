@@ -39,6 +39,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -160,9 +161,8 @@ public class PaymentPage extends AppCompatActivity {
                     }
                     case MotionEvent.ACTION_UP:
                         // Your action here on button click
-                        Intent intent = new Intent(Intent.ACTION_DIAL);
-                        intent.setData(Uri.parse("tel:18001031610"));
-                        startActivity(intent);
+                        CallNowDialog callnowdialog = new CallNowDialog();
+                        callnowdialog.showDialog(PaymentPage.this);
                         /*CallNowDialog callnowdialog = new CallNowDialog();
                         callnowdialog.showDialog(MainActivity.this);*/
                     case MotionEvent.ACTION_CANCEL: {
@@ -285,6 +285,17 @@ public class PaymentPage extends AppCompatActivity {
                     case R.id.nv_item_jobs_internships:
                         Intent l = new Intent(PaymentPage.this, Jobsandinternships.class);
                         startActivity(l);
+                        break;
+
+                    case R.id.nv_item_Resume_Service:
+                        Intent resume_service = new Intent(PaymentPage.this, ResumeService.class);
+                        startActivity(resume_service);
+                        break;
+
+                    case R.id.nv_item_learn_english:
+                        Intent learn_english = new Intent(PaymentPage.this, LearnEnglishPage.class);
+                        startActivity(learn_english);
+                        dl.closeDrawers();
                         break;
                     default:
                         return true;

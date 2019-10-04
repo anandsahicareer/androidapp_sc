@@ -53,7 +53,13 @@
                 android:title="Jobs And Internships"
                 android:icon="@drawable/nv_jobsandinternship"/>
         </group>
-        <group android:checkableBehavior="single" android:id="@+id/root_group5">
+    <group android:checkableBehavior="single" android:id="@+id/root_group5">
+        <item
+            android:id="@+id/nv_item_learn_english"
+            android:title="Learn English"
+            android:icon="@drawable/nv_jobsandinternship"/>
+    </group>
+        <group android:checkableBehavior="single" android:id="@+id/root_group6">
             <item
                 android:id="@+id/item_mentorships"
                 android:title="Find Mentor"

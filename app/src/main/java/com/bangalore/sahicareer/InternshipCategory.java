@@ -41,6 +41,7 @@ import android.widget.Toast;
 
 import com.bangalore.sahicareer.adapter.InternshipAdapter;
 import com.bangalore.sahicareer.bean.InternshipBean;
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONArray;
@@ -165,6 +166,11 @@ public class InternshipCategory extends AppCompatActivity{
                     case R.id.nv_item_Resume_Service:
                         Intent resume_service = new Intent(InternshipCategory.this, ResumeService.class);
                         startActivity(resume_service);
+                        dl.closeDrawers();
+                        break;
+                    case R.id.nv_item_learn_english:
+                        Intent learn_english = new Intent(InternshipCategory.this, LearnEnglishPage.class);
+                        startActivity(learn_english);
                         dl.closeDrawers();
                         break;
                     default:
@@ -441,41 +447,6 @@ public class InternshipCategory extends AppCompatActivity{
         mAdapter.notifyDataSetChanged();*/
     }
 
-    public class CallNowDialog {
-
-        public void showDialog(Activity activity) {
-            final Dialog dialog = new Dialog(activity);
-            dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            dialog.setCancelable(false);
-            dialog.setContentView(R.layout.callus_customlayout);
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
-            Button callnow = dialog.findViewById(R.id.frmCallnow);
-            //final EditText et_mobileno=dialog.findViewById(R.id.edit_mobileno);
-            callnow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    dialog.dismiss();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:18001031610"));
-                    startActivity(intent);
-
-                }
-            });
-
-            Button cancel = dialog.findViewById(R.id.frmCancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Toast.makeText(getApplicationContext(),"Cancel" ,Toast.LENGTH_SHORT).show();
-                    dialog.cancel();
-                }
-            });
-
-            dialog.show();
-        }
-    }
     public class ContactUsDialog {
 
         public void showDialog(Activity activity) {

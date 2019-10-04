@@ -29,6 +29,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
 
 import org.json.JSONException;
@@ -136,6 +137,12 @@ public class ResumeService extends AppCompatActivity implements View.OnClickList
                         startActivity(m);
                         dl.closeDrawers();
                         break;
+
+                    case R.id.nv_item_learn_english:
+                        Intent n = new Intent(ResumeService.this, LearnEnglishPage.class);
+                        startActivity(n);
+                        dl.closeDrawers();
+                        break;
                     default:
                         return true;
                 }
@@ -209,42 +216,6 @@ public class ResumeService extends AppCompatActivity implements View.OnClickList
 
                 default:
                     break;
-        }
-    }
-
-    public class CallNowDialog {
-
-        public void showDialog(Activity activity) {
-            callnow_dialog = new Dialog(activity);
-            callnow_dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-            callnow_dialog.setCancelable(false);
-            callnow_dialog.setContentView(R.layout.callus_customlayout);
-            callnow_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
-            Button callnow = callnow_dialog.findViewById(R.id.frmCallnow);
-            //final EditText et_mobileno=dialog.findViewById(R.id.edit_mobileno);
-            callnow.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    callnow_dialog.dismiss();
-                    Intent intent = new Intent(Intent.ACTION_DIAL);
-                    intent.setData(Uri.parse("tel:18001031610"));
-                    startActivity(intent);
-
-                }
-            });
-
-            Button cancel = callnow_dialog.findViewById(R.id.frmCancel);
-            cancel.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //Toast.makeText(getApplicationContext(),"Cancel" ,Toast.LENGTH_SHORT).show();
-                    callnow_dialog.cancel();
-                }
-            });
-
-            callnow_dialog.show();
         }
     }
 
