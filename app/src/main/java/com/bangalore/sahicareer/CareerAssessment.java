@@ -405,52 +405,52 @@ public class CareerAssessment extends AppCompatActivity implements View.OnClickL
                     if(str_cnt_name.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Name is Required.", Toast.LENGTH_LONG);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_mobile.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Mobile No. is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                     /*   TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_mobile.length()<10){
                         Toast toast = Toast.makeText(getApplicationContext(), "Invalid Mobile No.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                       /* TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_email.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Email is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(!str_cnt_email.matches(emailPattern)){
                         Toast toast = Toast.makeText(getApplicationContext()," Invalid Email Id", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
+                       /* TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
                         tv.setTextColor(Color.RED);
-                        tv.setTextSize(14);
+                        tv.setTextSize(14);*/
                         toast.show();
                     }else if(str_cnt_message.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Message is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
                     }
                     else{

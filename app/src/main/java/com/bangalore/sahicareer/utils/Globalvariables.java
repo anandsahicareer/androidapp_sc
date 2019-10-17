@@ -35,6 +35,7 @@ public class Globalvariables {
     public static String selected_edit_section_field;
 
     public static String selected_tc_pp_status;
+    public static String ccavenueURL;
 
    public static int rb_employment_details_count=0;
    public static String str_temp;

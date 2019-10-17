@@ -2,6 +2,7 @@ package com.bangalore.sahicareer;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.app.Service;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -34,6 +35,9 @@ import android.widget.Toast;
 
 import com.bangalore.sahicareer.utils.CallNowDialog;
 import com.bangalore.sahicareer.utils.Globalvariables;
+import com.paytm.pgsdk.PaytmOrder;
+import com.paytm.pgsdk.PaytmPGService;
+import com.paytm.pgsdk.PaytmPaymentTransactionCallback;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -46,7 +50,9 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -63,7 +69,10 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
     String cnt_selectedsubject,str_cnt_name,str_cnt_mobile,str_cnt_email,str_cnt_subject,str_cnt_message;
     private String TAG = LearnEnglishPage.class.getSimpleName();
 
+    String LearnEnglish_Plan_Id;
+
     private AlphaAnimation buttonClick = new AlphaAnimation(2F, 0.8F);
+    static PaytmPGService Service = PaytmPGService.getStagingService();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,13 +114,16 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
         bt_1799_plan=(Button) findViewById(R.id.btn_le_1799_plan);
         bt_1799_plan.setOnClickListener(this);
 
+
+
+
         sv=(ScrollView)findViewById(R.id.CA_main_scrollview);
         dl = (DrawerLayout)findViewById(R.id.drawer_layout);
         t = new ActionBarDrawerToggle(this, dl,R.string.Open, R.string.Close);
         dl.addDrawerListener(t);
         t.syncState();
 
-        new GetSubscriptionsPlanDetailsAPI().execute();
+        //new GetSubscriptionsPlanDetailsAPI().execute();
         nv = (NavigationView)findViewById(R.id.nav_view);
 
 
@@ -213,26 +225,33 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.btn_le_399_plan:
-                view.startAnimation(buttonClick);
+                //view.startAnimation(buttonClick);
+                LearnEnglish_Plan_Id="6859";
+
+                PayMentDetails();
+                //new GetPaymentDetailsAPI().execute();
 
                 break;
 
             case R.id.btn_le_499_plan:
-                view.startAnimation(buttonClick);
+                //view.startAnimation(buttonClick);
+                LearnEnglish_Plan_Id="6860";
                 /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
                 startActivity(plan_399);*/
 
                 break;
 
             case R.id.btn_le_999_plan:
-                view.startAnimation(buttonClick);
+                //view.startAnimation(buttonClick);
+                LearnEnglish_Plan_Id="6861";
                 /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
                 startActivity(plan_399);*/
 
                 break;
 
             case R.id.btn_le_1799_plan:
-                view.startAnimation(buttonClick);
+                //view.startAnimation(buttonClick);
+                LearnEnglish_Plan_Id="6862";
                 /*Intent plan_399 = new Intent(LearnEnglishPage.this, ProfilePage.class);
                 startActivity(plan_399);*/
 
@@ -285,52 +304,52 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                     if(str_cnt_name.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Name is Required.", Toast.LENGTH_LONG);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_mobile.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Mobile No. is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_mobile.length()<10){
                         Toast toast = Toast.makeText(getApplicationContext(), "Invalid Mobile No.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(str_cnt_email.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Email is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                        /*TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
 
                     }
                     else if(!str_cnt_email.matches(emailPattern)){
                         Toast toast = Toast.makeText(getApplicationContext()," Invalid Email Id", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
+                       /* TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
                         tv.setTextColor(Color.RED);
-                        tv.setTextSize(14);
+                        tv.setTextSize(14);*/
                         toast.show();
                     }else if(str_cnt_message.equals("")){
                         Toast toast = Toast.makeText(getApplicationContext(), "Message is required.", Toast.LENGTH_SHORT);
                         toast.setGravity(Gravity.CENTER, 0, 0);
-                        TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
+                       /* TextView v1 = (TextView) toast.getView().findViewById(android.R.id.message);
                         v1.setTextColor(Color.RED);
-                        v1.setTextSize(14);
+                        v1.setTextSize(14);*/
                         toast.show();
                     }
                     else{
@@ -444,7 +463,6 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                     tv.setTextSize(14);
                     toast.show();
                     contactus_dialog.dismiss();
-
                 }
                 else
                 {
@@ -502,7 +520,8 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
 
     }
 
-    public class GetSubscriptionsPlanDetailsAPI extends AsyncTask<String, Void, String> {
+
+    public class GetPaymentDetailsAPI extends AsyncTask<String, Void, String> {
 
         protected void onPreExecute(){}
 
@@ -510,21 +529,23 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
 
             try {
 
-                URL url = new URL("https://www.sahicareer.com/subscription-plans"); // here is your URL path
+                URL url = new URL("https://www.sahicareer.com/mobile/learn-english"); // here is your URL path
 
 
 
                 JSONObject postDataParams = new JSONObject();
+                postDataParams.put("user_id", Globalvariables.user_id);
+                postDataParams.put("plan_id", LearnEnglish_Plan_Id);
 
-                postDataParams.put("user_name", "null");
+
 
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(15000 /* milliseconds */);
                 conn.setConnectTimeout(15000 /* milliseconds */);
-                conn.setRequestMethod("GET");
-                conn.setDoInput(false);
+                conn.setRequestMethod("POST");
+                conn.setDoInput(true);
                 conn.setDoOutput(true);
 
                 OutputStream os = conn.getOutputStream();
@@ -572,20 +593,17 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
 
             try {
                 JSONObject jsonObject = new JSONObject(result);
-                String status = jsonObject.getString("ack");
+                String ack = jsonObject.getString("ack");
 
-              /*  if(status.equals("1")){
-                    Toast toast = Toast.makeText(getApplicationContext(), "Thank you for getting in touch!\n" +
-                            "One of our executive will get back to you shortly.\n", Toast.LENGTH_LONG);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
-                    TextView tv = (TextView) toast.getView().findViewById(android.R.id.message);
-                    tv.setTextColor(Color.BLACK);
-                    tv.setTextSize(14);
-                    toast.show();
-                    contactus_dialog.dismiss();
-
-                }*/
-               /* else
+                if(ack.equals("1"))
+                {
+                    String ccavenueURL = jsonObject.getString("redirectUrl");
+                    Globalvariables.ccavenueURL=ccavenueURL;
+                    Intent j = new Intent(LearnEnglishPage.this, CcAvenuePaymentURLPage.class);
+                    startActivity(j);
+                    //contactus_dialog.dismiss();
+                }
+                else
                 {
                     Toast toast = Toast.makeText(getApplicationContext(), "Something Went Wrong! Please Try after Sometime...", Toast.LENGTH_LONG);
                     toast.setGravity(Gravity.CENTER, 0, 0);
@@ -593,7 +611,8 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
                     tv.setTextColor(Color.BLACK);
                     tv.setTextSize(14);
                     toast.show();
-                }*/
+                }
+               // progree_dialog.dismiss();
 
             }catch (final JSONException e) {
                 Log.e(TAG, "Json parsing error: " + e.getMessage());
@@ -610,6 +629,61 @@ public class LearnEnglishPage extends AppCompatActivity implements View.OnClickL
             }
 
         }
+    }
+
+    public void PayMentDetails(){
+
+        Map<String, String> paramMap = new HashMap<String,String>();
+        paramMap.put( "MID" , "qVLrPN96529905226701");
+// Key in your staging and production MID available in your dashboard
+        paramMap.put( "ORDER_ID" , "order1");
+        paramMap.put( "CUST_ID" , "cust123");
+        paramMap.put( "MOBILE_NO" , "7777777777");
+        paramMap.put( "EMAIL" , "username@gmail.com");
+        paramMap.put( "CHANNEL_ID" , "WAP");
+        paramMap.put( "TXN_AMOUNT" , "100.12");
+        paramMap.put( "WEBSITE" , "WEBSTAGING");
+// This is the staging value. Production value is available in your dashboard
+        paramMap.put( "INDUSTRY_TYPE_ID" , "Retail");
+// This is the staging value. Production value is available in your dashboard
+        paramMap.put( "CALLBACK_URL", "https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=order1");
+        paramMap.put( "CHECKSUMHASH" , "w2QDRMgp1234567JEAPCIOmNgQvsi+BhpqijfM9KvFfRiPmGSt3Ddzw+oTaGCLneJwxFFq5mqTMwJXdQE2EzK4px2xruDqKZjHupz9yXev4=");
+        PaytmOrder Order = new PaytmOrder((HashMap<String, String>) paramMap);
+        Service.initialize(Order, null);
+
+        Service.startPaymentTransaction(LearnEnglishPage.this, true, true, new PaytmPaymentTransactionCallback() {
+            /*Call Backs*/
+            public void someUIErrorOccurred(String inErrorMessage) {
+                Toast.makeText(getApplicationContext(), "UI Error " + inErrorMessage , Toast.LENGTH_LONG).show();
+            }
+
+            public void onTransactionResponse(Bundle inResponse)
+            {
+                Toast.makeText(getApplicationContext(), "Payment Transaction response " + inResponse.toString(), Toast.LENGTH_LONG).show();
+            }
+
+            public void networkNotAvailable() {
+                Toast.makeText(getApplicationContext(), "Network connection error: Check your internet connectivity", Toast.LENGTH_LONG).show();
+            }
+
+            public void clientAuthenticationFailed(String inErrorMessage) {
+                Toast.makeText(getApplicationContext(), "Authentication failed: Server error" + inErrorMessage.toString(), Toast.LENGTH_LONG).show();
+            }
+
+            public void onErrorLoadingWebPage(int iniErrorCode, String inErrorMessage, String inFailingUrl) {
+                Toast.makeText(getApplicationContext(), "Unable to load webpage " + inErrorMessage.toString(), Toast.LENGTH_LONG).show();
+            }
+
+            public void onBackPressedCancelTransaction() {
+                Toast.makeText(getApplicationContext(), "Transaction cancelled" , Toast.LENGTH_LONG).show();
+            }
+
+            public void onTransactionCancel(String inErrorMessage, Bundle inResponse) {
+                Toast.makeText(getApplicationContext(), "T Cancel " + inErrorMessage.toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+
     }
 
 }
